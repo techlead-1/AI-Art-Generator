@@ -1,0 +1,87 @@
+/*Navigation Component*/
+.navbar {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+  .navlinks {
+    width: fit-content;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    transition: 0.5s;
+  }
+
+  .link:hover {
+    color: #079cff;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /*1200px and large devices*/
+  @media screen and (min-width: 1200px) {
+    .logo {
+      font-size: 70px;
+    }
+
+    .link {
+      font-size: 23px;
+      margin-left: 40px;
+    }
+  }
+
+  /*500px and lower*/
+  @media screen and (max-width: 500px) {
+    .menu {
+      display: block;
+      font-size: 30px;
+      z-index: 5;
+    }
+
+    .navlinks {
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      background-color: #0c0c1f;
+      height: 100%;
+      transition: 0s;
+    }
+
+    .link {
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-size: 22px;
+      padding: 25px 0px;
+      border-bottom: 1px solid white;
+      font-weight: bold;
+    }
+    
+    .link:hover {
+      background-color: #079cff;
+      color: #0c0c1f;
+    }
+
+    .home {
+      margin: 100px auto 0px auto!important;
+      padding: 25px 0px;
+      border-top: 1px solid white;
+    }
+  }
