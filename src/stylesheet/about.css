@@ -1,0 +1,51 @@
+.about {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.about-image {
+    background-image: url(../resources/about-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 70%;
+    margin: 20px auto 10px auto;
+}
+
+.image-caption {
+    display: block;
+    width: 70%;
+    margin: 0px auto 20px auto;
+}
+
+.buttom-p {
+    margin-bottom: 20px;
+}
+
+/*1200px and higher screen sizes*/
+@media screen and (min-width: 1200px) {
+    .about-p {
+        font-size: 20px;
+    }
+
+    .about-image {
+        height: 600px;
+    }
+
+    .image-caption {
+        font-size: 20px;
+    }
+}
+
+/*600px and lower screen sizes*/
+@media screen and (max-width: 600px) {
+
+    .about-image {
+        width: 100%;
+    }
+
+    .image-caption {
+        width: 100%;
+    }
+}

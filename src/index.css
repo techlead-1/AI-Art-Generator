@@ -2,14 +2,10 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.7s;
 }
 
 body {
   background-image: linear-gradient(to left, #0c0c1f, #001C82);
   font-family: poppins, sans-serif;
   color: white;
-  overflow: hidden;
 }

@@ -1,0 +1,94 @@
+.homepage {
+    width: 90%;
+    margin: 100px auto 50px auto;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+/*.image {
+    background-image: url(../resources/homeimage);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 500px;
+    margin-right: 50px;
+}*/
+
+.description {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.home-button {
+    padding: 12px 25px;
+    background-color: #079cff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.home-button:hover {
+    background-color: white;
+    color: #079cff;
+}
+
+.home-button:hover .home-link {
+    color: #079cff;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: max-content;
+}
+
+/*1200px and larger screen sizes*/
+@media screen and (min-width: 1200px) {
+    .header {
+    font-size: 50px;
+    }
+
+    .description {
+        font-size: 25px;
+    }
+
+    .home-link {
+        font-size: 25px;
+    }
+}
+
+/*600px and lower screen sizes*/
+@media screen and (max-width: 600px) {
+    .header {
+    font-size: 40px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .home-link {
+        font-size: 16px;
+    }
+}
+
+/*500px and lower screen sizes*/
+@media screen and (max-width: 500px) {
+    .header {
+    font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .home-link {
+        font-size: 15px;
+    }
+}

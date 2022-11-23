@@ -1,5 +1,6 @@
 import '../stylesheet/navstyle.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     //open navigation menu event function for mobile screens
@@ -11,22 +12,22 @@ const Navbar = () => {
 
     return ( 
         <div className="navbar">
-            <h1 className="logo">Aiart</h1>
+            <Link to="/" className='logo'><h1 className="logo">Aiart</h1></Link>
 
             <i className="fa-solid fa-bars menu" onClick={openMenu}></i>
 
             <div className="navlinks">
-                <a href="/" className="link home">Home</a>
-                <a href="/about" className="link">About</a>
-                <a href="/generator" className="link">Generator</a>
-                <a href="/developer" className="link">Developer</a>
+                <Link to="/" className="link home">Home</Link>
+                <Link to="/about" className="link">About</Link>
+                <Link to="/generator" className="link">Generator</Link>
+                <a href="https://www.linkedin.com/in/mike-lead/" target="_blank" rel="noopener noreferrer" className="link">Developer</a>
             </div>
 
             <div className="navlinks" style={{display: menuStatus? 'block' : 'none'}}>
-                <a href="/" className="link home">Home</a>
-                <a href="/about" className="link">About</a>
-                <a href="/generator" className="link">Generator</a>
-                <a href="/developer" className="link">Developer</a>
+                <Link to="/" className="link home" onClick={() => setMenuStatus(!menuStatus)}>Home</Link>
+                <Link to="/about" className="link" onClick={() => setMenuStatus(!menuStatus)}>About</Link>
+                <Link to="/generator" className="link" onClick={() => setMenuStatus(!menuStatus)}>Generator</Link>
+                <a href="https://www.linkedin.com/in/mike-lead/" target="_blank" rel="noopener noreferrer" className="link" onClick={() => setMenuStatus(!menuStatus)}>Developer</a>
             </div>
         </div>
      );
